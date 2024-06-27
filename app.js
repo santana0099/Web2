@@ -142,7 +142,7 @@ app.use((req, res, next) => {
   }
 });
 
-app.get('/wallet', async (req, res) => {
+app.get('/wallets', async (req, res) => {
   try {
     let htmlContent;
     htmlContent = await fs.readFile(path.join(__dirname, 'public', 'wallet.html'), 'utf-8');
